@@ -88,7 +88,7 @@ jobs:
         SECRET: ${{ secrets.CONNECTED_APP_CLIENT_SECRET }}
       run: |
         artifactName=$(ls *.jar | head -1)
-        mvn deploy -DskipMunitTests -DmuleDeploy \
+        mvn deploy -DskipMunitTests -DmuleDeploy  -X \
          -Dmule.artifact=$artifactName \
          -Dclient.id="$ID" \
          -Dclient.secret="$SECRET" \
