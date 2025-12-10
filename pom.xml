@@ -4,7 +4,7 @@
             
 	<groupId>3d374624-ce32-4bcf-9282-775b0743f5e4</groupId>
 	<artifactId>tlp-test-cicd</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<packaging>mule-application</packaging>
 
 	<name>tlp-test-cicd</name>
@@ -35,7 +35,7 @@
                         <uri>https://eu1.anypoint.mulesoft.com</uri>
                         <provider>MC</provider>
                         <environment>Sandbox</environment>
-                        <target>Cloudhub-US-East-2</target>
+                        <target>leapmotor-noprod-ps</target>
                         <server>Repository</server>
                         <applicationName>${project.artifactId}</applicationName>
                         <releaseChannel>NONE</releaseChannel>
