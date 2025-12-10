@@ -38,9 +38,10 @@
                         <target>leapmotor-noprod-ps</target>
                         <server>Repository</server>
                         <applicationName>${project.artifactId}</applicationName>
-                        <releaseChannel>NONE</releaseChannel>
+                        <releaseChannel>LTS</releaseChannel>
                         <replicas>1</replicas>
                         <vCores>0.1</vCores>
+                        <muleVersion>${app.runtime}</muleVersion>
                         <deploymentSettings>
                             <generateDefaultPublicUrl>true</generateDefaultPublicUrl>
                         </deploymentSettings>
