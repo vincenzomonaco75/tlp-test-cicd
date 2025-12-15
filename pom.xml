@@ -4,7 +4,7 @@
             
 	<groupId>d4f1946a-9db6-4119-a294-daa5ba11cad6</groupId>
 	<artifactId>tlp-test-cicd</artifactId>
-	<version>2.0.1</version>
+	<version>2.0.2</version>
 	<packaging>mule-application</packaging>
 
 	<name>tlp-test-cicd</name>
