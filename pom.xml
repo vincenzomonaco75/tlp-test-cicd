@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
             
-	<groupId>3d374624-ce32-4bcf-9282-775b0743f5e4</groupId>
+	<groupId>d4f1946a-9db6-4119-a294-daa5ba11cad6</groupId>
 	<artifactId>tlp-test-cicd</artifactId>
-	<version>1.0.4</version>
+	<version>2.0.0</version>
 	<packaging>mule-application</packaging>
 
 	<name>tlp-test-cicd</name>
@@ -32,11 +32,11 @@
                 <configuration>
                     <classifier>mule-application</classifier>
                     <cloudhub2Deployment>
-                        <uri>https://eu1.anypoint.mulesoft.com</uri>
+                        <uri>https://anypoint.mulesoft.com</uri>
                         <provider>MC</provider>
-                        <environment>Sandbox</environment>
-                        <target>leapmotor-noprod-ps</target>
-                        <server>Repository</server>
+                        <environment>test</environment>
+                        <target>tlp-digital-services-noprod-ps</target>
+                        <server>private-anypoint-exchange-v3</server>
                         <applicationName>${project.artifactId}</applicationName>
                         <releaseChannel>LTS</releaseChannel>
                         <replicas>1</replicas>
@@ -50,6 +50,7 @@
             </plugin>
         </plugins>
     </build>
+    
     <repositories>
         <repository>
             <id>anypoint-exchange-v3</id>
@@ -64,9 +65,9 @@
             <layout>default</layout>
         </repository>
         <repository>
-            <id>Repository</id>
+            <id>private-anypoint-exchange-v3</id>
             <name>Private Exchange repository</name>
-            <url>https://maven.eu1.anypoint.mulesoft.com/api/v3/organizations/${project.groupId}/maven</url>
+            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/${project.groupId}/maven</url>
             <layout>default</layout>
         </repository>
     </repositories>
